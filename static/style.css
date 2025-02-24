@@ -4,7 +4,7 @@ body {
     padding: 20px;
 }
 
-.grid {
+#grid-container {
     display: inline-grid;
     gap: 2px;
     margin: 20px;
