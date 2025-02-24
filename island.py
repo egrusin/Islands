@@ -1,6 +1,10 @@
-# Алгоритм подсчета островов
+import random
 
-def count_islands(grid):
+
+def count_islands(grid) -> tuple[int, list[list[int]]]:
+    """Функция подсчета островов.
+    param: grid - list[list[int]] - двумерное поле, вода и острова
+    return: int, list[list[int]]] - количество островов и их раскраска"""
     rows, cols = len(grid), len(grid[0])
     island_count = 0
     island_map = [[0] * cols for _ in range(rows)]
@@ -26,3 +30,19 @@ def count_islands(grid):
                 dfs(i, j, island_count)
     
     return island_count, island_map
+
+
+def generate_random_grid(rows, cols):
+    return [[random.randint(0, 1) for _ in range(cols)] for _ in range(rows)]
+
+
+if __name__ == '__main__':
+    sea = generate_random_grid(5, 5)
+    print('Исходное поле:')
+    print(*sea, sep='\n')
+    print()
+
+    i_count, map = count_islands(sea)
+    print('Количество островов:', i_count)
+    print('Окрашенное поле:')
+    print(*map, sep='\n')
