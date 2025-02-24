@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подсчет островов</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Подсчет островов</h1>
+    <div>
+        <label>Rows (M): <input type="number" id="rows" min="1" value="5"></label>
+        <label>Columns (N): <input type="number" id="cols" min="1" value="5"></label>
+    </div>
+    <div id="grid-container"></div>
+    <p>Количество островов: <span id="island-count">0</span></p>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
