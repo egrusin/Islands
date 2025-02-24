@@ -9,8 +9,9 @@
 <body>
     <h1>Подсчет островов</h1>
     <div>
-        <label>Rows (M): <input type="number" id="rows" min="1" value="5"></label>
-        <label>Columns (N): <input type="number" id="cols" min="1" value="5"></label>
+        <label>Строки (M): <input type="number" id="rows" min="1" value="5"></label>
+        <label>Столбцы (N): <input type="number" id="cols" min="1" value="5"></label>
+        <button onclick="generateRandom()">Сгенерировать</button>
     </div>
     <div id="grid-container"></div>
     <p>Количество островов: <span id="island-count">0</span></p>

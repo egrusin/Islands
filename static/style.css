@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.grid {
+    display: inline-grid;
+    gap: 2px;
+    margin: 20px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Цвета */
+.water {
+    background-color: #87CEEB;
+}
+
+.land {
+    background-color: #8B4513;
+}
+
+/* Цвета для островов */
+.island-1 { background-color: #FF4500; }
+.island-2 { background-color: #FFD700; }
+.island-3 { background-color: #32CD32; }
+.island-4 { background-color: #1E90FF; }
+.island-5 { background-color: #FF69B4; }
